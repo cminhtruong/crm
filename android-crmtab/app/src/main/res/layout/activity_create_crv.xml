@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ebebeb"
+    tools:context=".crv.view.CreateCrvActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <!-- A CardView that contains a TextView -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view5"
+                card_view:cardElevation="7sp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="4dp"
+
+                android:layout_gravity="left"
+
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compte rendu de visite pour: "
+                    android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/lblInfoClient"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/layout_card_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <!-- A CardView that contains a TextView -->
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view"
+                        card_view:cardElevation="7sp"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardCornerRadius="4dp"
+                        android:layout_gravity="left"
+                        android:layout_width="350dp"
+                        android:layout_height="270dp"
+
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="7dp"
+                                android:id="@+id/lblName"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:textSize="20sp"
+                                android:text="Créer par: "
+                                />
+
+                            <EditText
+                                android:id="@+id/txtName"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/lblName"
+                                android:paddingRight="5dp"
+                                android:text="Muthu"
+                                android:enabled="false"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:id="@+id/lblDate"
+                                android:paddingTop="19dp"
+                                android:layout_below="@+id/lblName"
+                                android:layout_alignRight="@+id/lblName"
+                                android:textSize="20sp"
+                                android:text="Date: "
+                                />
+
+                            <EditText
+                                android:id="@+id/txtDate"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="date"
+                                android:layout_toRightOf="@+id/lblDate"
+                                android:layout_below="@+id/txtName"
+                                android:paddingRight="5dp"
+                                android:text="06/12/2015"
+                                android:enabled="false"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:id="@+id/lblContact"
+                                android:paddingTop="19dp"
+                                android:layout_below="@+id/lblDate"
+                                android:layout_alignRight="@+id/lblDate"
+                                android:textSize="20sp"
+                                android:text="Contact: "
+                                />
+
+                            <EditText
+                                android:id="@+id/txtContact"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:layout_toRightOf="@+id/lblContact"
+                                android:layout_below="@+id/txtDate"
+                                android:paddingRight="5dp"
+                                android:text="Giraud"
+                                android:enabled="false"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:id="@+id/lblTel"
+                                android:paddingTop="19dp"
+                                android:layout_below="@+id/lblContact"
+                                android:layout_alignRight="@+id/lblContact"
+                                android:textSize="20sp"
+                                android:text="Tel: "
+                                />
+
+                            <EditText
+                                android:id="@+id/txtTel"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"
+                                android:layout_toRightOf="@+id/lblTel"
+                                android:layout_below="@+id/txtContact"
+                                android:paddingRight="5dp"
+                                android:text="0778801708"
+                                android:enabled="false"
+                                />
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/message"
+                                android:id="@+id/btnSms"
+                                android:layout_below="@+id/txtContact"
+                                android:layout_toRightOf="@id/txtTel"/>
+                            <Button
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/call"
+                                android:id="@+id/btnCall"
+                                android:onClick="callContact"
+                                android:layout_below="@+id/txtContact"
+                                android:layout_toRightOf="@id/btnSms"/>
+                            <Button
+                                android:paddingTop="3dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/btnModifyInfo"
+                                android:layout_below="@+id/txtTel"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/edit"
+                                android:onClick="editInfo"
+                                />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <!-- A CardView that contains a TextView -->
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view1"
+                        card_view:cardElevation="7sp"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardCornerRadius="4dp"
+                        android:layout_gravity="left"
+                        android:layout_width="fill_parent"
+                        android:layout_height="270dp"
+
+
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+
+                            <CheckBox
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Présentation promotion"
+                            android:id="@+id/chk1" />
+                            <CheckBox
+                                android:layout_marginTop="5dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Règlement litige"
+                                android:layout_below="@+id/chk1"
+                                android:id="@+id/chk2" />
+                            <CheckBox
+                                android:layout_marginTop="5dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Action marketing"
+                                android:layout_below="@+id/chk2"
+                                android:id="@+id/chk3" />
+                            <CheckBox
+                                android:layout_marginTop="5dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Présentation produit"
+                                android:layout_below="@+id/chk3"
+                                android:id="@+id/chk4" />
+
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:id="@+id/layout_card_info2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_card_info"
+                android:orientation="horizontal"
+
+                >
+
+                <!-- A CardView that contains a TextView -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view2"
+                    card_view:cardElevation="7sp"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:visibility="visible"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnList"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/list"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:enabled="false"
+                        android:onClick="launchInputDialogProduct"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/lblProduct"
+                        android:layout_marginLeft="60dp"
+                        android:layout_toRightOf="@+id/btnList"
+                        android:textSize="20sp"
+                        android:text="Produit(s) présenté(s)"
+                        />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lstProducts"
+                        android:layout_marginTop="70dp">
+
+                    </ListView>
+                </android.support.v7.widget.CardView>
+
+
+                    <!-- A CardView that contains a TextView -->
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view3"
+                        card_view:cardElevation="7sp"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardCornerRadius="4dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:paddingLeft="5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Montant approximatif: "
+                                    android:textSize="20sp"/>
+
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal"
+                                    android:text="1000"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                                <TextView
+                                    android:paddingLeft="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Client satisfait ?"
+                                    android:textSize="20sp"/>
+
+                                <RadioGroup
+                                    android:id="@+id/grpSatisfaction"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <RadioButton
+                                        android:id="@+id/rdOui"
+                                        android:checked="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Oui"/>
+                                    <RadioButton
+                                        android:id="@+id/rdNon"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Non"/>
+                                    <RadioButton
+                                        android:id="@+id/rdMoyen"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Moyen"/>
+
+                                </RadioGroup>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/btnDetail"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Detail"
+                                    android:onClick="showSatisfactionDetail"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_card_info3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_card_info2"
+                android:orientation="horizontal"
+
+                >
+
+                <!-- A CardView that contains a TextView -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view4"
+                    card_view:cardElevation="4sp"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_gravity="left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="270dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="500dp"
+                            android:layout_height="fill_parent"
+                            android:inputType="textMultiLine"
+                            android:id="@+id/txtComment"
+                            android:hint="Commentaire"/>
+                        <Button
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="180dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btnMic"
+                            android:onClick="launchVoiceRec"
+                            android:background="@drawable/mic"/>
+                        <Button
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="180dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/btnMessageList"
+                            android:onClick="launchInputDialog"
+                            android:background="@drawable/list"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

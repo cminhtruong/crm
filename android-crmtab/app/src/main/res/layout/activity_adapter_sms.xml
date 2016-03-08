@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_margin="10sp"
+    tools:context=".MainActivity">
+
+
+        <CheckBox
+            android:id="@+id/checkBox_message"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="200sp"
+            android:layout_weight="1.50"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Contacts"
+                android:gravity="left"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_contact" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Bonjour comment tu vas?..."
+                android:gravity="left"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_height="36dp"
+                android:id="@+id/message_bigining" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_time"
+            android:text="17h45"
+            android:textSize="12dp"
+            android:drawableRight="@drawable/ic_next"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

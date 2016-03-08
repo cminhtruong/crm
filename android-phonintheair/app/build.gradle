@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    defaultConfig {
+        applicationId "fr.pds.isintheair.phonintheair"
+        minSdkVersion 23
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        prod {
+            applicationIdSuffix = "prod"
+        }
+
+        dev {
+            applicationIdSuffix = "dev"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+
+    testCompile('org.powermock:powermock-module-junit4:1.6.4') {
+        exclude module: 'hamcrest-core'
+        exclude module: 'objenesis'
+    }
+
+    testCompile('org.powermock:powermock-api-mockito:1.6.4') {
+        exclude module: 'hamcrest-core'
+        exclude module: 'objenesis'
+    }
+}

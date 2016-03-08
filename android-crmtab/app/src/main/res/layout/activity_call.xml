@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="25sp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/phone_state_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="State"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/phone_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/phone_logo_red"/>
+
+</LinearLayout>

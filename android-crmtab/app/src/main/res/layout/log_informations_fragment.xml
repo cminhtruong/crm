@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:foregroundGravity="center">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        android:elevation="7sp"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+              >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#e8e8e7"
+                >
+
+                <TextView
+                    android:id="@+id/formtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#2582C5"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="@string/contact"/>
+                <EditText
+                    android:id="@+id/edittextcontactname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f3f3f3"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    android:enabled="false"/>
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="@string/textViewNumero"/>
+                <EditText
+                    android:id="@+id/edittextcontatctnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f3f3f3"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    android:enabled="false"/>
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="Client"/>
+                <EditText
+                    android:id="@+id/edittextclientname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f3f3f3"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    android:enabled="false"/>
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="Date"/>
+                <EditText
+                    android:id="@+id/edittextdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f3f3f3"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    android:enabled="false"/>
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="Durée"/>
+                <EditText
+                    android:id="@+id/edittextduration"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f3f3f3"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    android:enabled="false"/>
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="Type d'appel"
+                    android:visibility="gone"/>
+                <EditText
+                    android:id="@+id/edittextcalltype"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f3f3f3"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    android:enabled="false"
+                    android:visibility="gone"/>
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="Sujet"/>
+                <EditText
+                    android:id="@+id/edittextsubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#cef4ca"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:singleLine="true"
+                    />
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#372c24"
+                    android:text="@string/textviewcommentaire"/>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/edittextcomments"
+                        android:layout_width="600dp"
+                        android:layout_height="100dp"
+                        android:textColor="#cef4ca"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        />
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/vocalcomment"
+
+                       />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buttonregistercra"
+                    android:layout_width="190dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="Enregistrer"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>

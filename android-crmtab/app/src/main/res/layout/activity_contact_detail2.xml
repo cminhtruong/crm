@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fr.pds.isintheair.crmtab.common.view.activity.ContactDetailActivity2">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="10dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/profile"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFname"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtTel"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:contentPadding="10dp">
+
+            <ImageView
+                android:id="@+id/imgCall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onPhoneClick"
+                android:src="@drawable/call"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:contentPadding="10dp">
+
+            <ImageView
+                android:id="@+id/imgSms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onSmsClick"
+                android:src="@drawable/message"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:contentPadding="10dp">
+
+            <ImageView
+                android:id="@+id/imgVisit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onVisitClick"
+                android:src="@drawable/visit"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:contentPadding="10dp">
+
+            <ImageView
+                android:id="@+id/imgAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onAgendaClick"
+                android:src="@drawable/agenda"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

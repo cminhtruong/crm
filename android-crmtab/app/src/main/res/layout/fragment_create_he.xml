@@ -1,0 +1,415 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".admin.referentiel.client.create.he.fragment.CreateHCFragment"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/create_customer_cartview_marge"
+        android:layout_marginRight="@dimen/create_customer_cartview_marge"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="@string/create_he_fragment_title_textview" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/create_he_fragment_name"
+            android:layout_width="match_parent"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_is_public_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- android:checkedButton="@id/create_he_fragment_is_public_yes_radio_button" -->
+        <RadioGroup
+            android:id="@+id/create_he_fragment_is_public"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/create_he_fragment_is_public_yes_radio_button"
+            >
+
+
+                <RadioButton
+                    android:id="@id/create_he_fragment_is_public_yes_radio_button"
+                    android:text="@string/create_he_fragment_is_public_yes_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_is_public_no_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_siret_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_siret_number"
+            android:layout_width="match_parent"
+            android:minWidth="150dp"
+            android:inputType="number"
+            android:maxLength="14"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_finess_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_finess_number"
+            android:layout_width="match_parent"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:inputType="number"
+            android:maxLength="9"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_street_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_street_number"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_street_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_street_name"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_town_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_town_name"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_zip_code_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_zip_code"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:inputType="number"
+            android:maxLength="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_bed_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_bed_number"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_web_site_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/create_he_fragment_web_site"
+            android:minWidth="@dimen/create_customer_min_width_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_etablishment_type_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/create_he_fragment_etablishment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@id/create_he_fragment_etablishment_type"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_purshasing_central_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/create_he_fragment_purshasing_central"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@id/create_he_fragment_purshasing_central"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/create_he_fragment_holding_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/create_he_fragment_holding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@id/create_he_fragment_purshasing_central"></Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/create_he_fragment_difficulty_having_contact_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <!--android:checkedButton="@id/create_he_fragment_difficulty_having_contact_zero"    -->
+        <RadioGroup
+            android:id="@+id/create_he_fragment_difficulty_having_contact"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/create_he_fragment_difficulty_having_contact_zero">
+
+                <RadioButton
+                    android:id="@id/create_he_fragment_difficulty_having_contact_zero"
+                    android:text="@string/create_he_fragment_zero_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_one_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_two_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_three_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_four_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_five_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+
+
+        <TextView
+            android:text="@string/create_he_fragment_service_building_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- android:checkedButton="@id/create_he_fragment_service_building_zero" -->
+        <RadioGroup
+            android:id="@+id/create_he_fragment_service_building"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/create_he_fragment_service_building_zero">
+
+
+                <RadioButton
+                    android:id="@id/create_he_fragment_service_building_zero"
+                    android:text="@string/create_he_fragment_zero_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_one_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_two_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_three_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_four_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:text="@string/create_he_fragment_five_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+        </RadioGroup>
+
+    <!--  android:onClick="insertHE" -->
+    <Button
+        android:id="@+id/create_he_fragment_validate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/create_he_fragment_validate"/>
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Nouveau Message"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_height="80sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent">
+        <EditText
+            android:layout_width="wrap_content"
+            android:text="Contacts"
+            android:padding="15sp"
+            android:background="@drawable/base_edit_text_shape"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/contacts" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_add_user"
+            android:layout_height="match_parent"
+            android:id="@+id/add_contacts"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listView_conversations"
+        android:layout_height="600sp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_height="95sp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:layout_width="0dp"
+            android:background="@drawable/base_edit_text_shape"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/editText_new_message" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_send"
+            android:layout_height="match_parent"
+            android:id="@+id/send_message"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
